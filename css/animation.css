@@ -1,0 +1,151 @@
+	+
+*,
+2	+
+::after{
+3	+
+margin: 0;
+4	+
+padding: 0;
+5	+
+}
+6	+
+7	+
+#boxes-container{
+8	+
+display: flex;
+9	+
+justify-content: center;
+10	+
+align-items: center;
+11	+
+gap: 30px;
+12	+
+margin-top: 60px;
+13	+
+}
+14	+
+.card{
+15	+
+width: 300px;
+16	+
+height: 300px;
+17	+
+border-radius: 8px;
+18	+
+position: relative;
+19	+
+}
+20	+
+.card img{
+21	+
+width: 100%;
+22	+
+height: 100%;
+23	+
+overflow: hidden;
+24	+
+border-radius: 8px;
+25	+
+}
+26	+
+27	+
+.card-content:hover .content{
+28	+
+display: flex;
+29	+
+flex-direction: column;
+30	+
+}
+31	+
+32	+
+@keyframes scroll {
+33	+
+0% {
+34	+
+transform:translateY(80%);
+35	+
+}
+36	+
+100%{
+37	+
+transform: translateY(0%);
+38	+
+}
+39	+
+}
+40	+
+.card-content{
+41	+
+position: absolute;
+42	+
+top: 0;
+43	+
+left: 0;
+44	+
+width: 100%;
+45	+
+height: 100%;
+46	+
+overflow-y: hidden;
+47	+
+transition: all 0.3s;
+48	+
+}
+49	+
+50	+
+51	+
+.content{
+52	+
+display: flex;
+53	+
+flex-direction: column;
+54	+
+justify-content: center;
+55	+
+border-radius: 8px;
+56	+
+padding: 10px;
+57	+
+width: 93.3%;
+58	+
+height: 100%;
+59	+
+background-color: rgba(181, 132, 25, 0.457);
+60	+
+transition: all 0.8s;
+61	+
+animation-name: scroll;
+62	+
+animation-duration: 1s;
+63	+
+overflow-y: hidden;
+64	+
+display: none;
+65	+
+backdrop-filter: blur;
+66	+
+67	+
+gap: 20px;
+68	+
+69	+
+}
+70	+
+h3{
+71	+
+color: aliceblue;
+72	+
+}
+73	+
+p{
+74	+
+color: white;
+75	+
+}
+76	+
+span{
+77	+
+color: rgb(8, 8, 168);
+78	+
+text-decoration: underline;
+79	+
+}
